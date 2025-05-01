@@ -1,0 +1,7 @@
+# creating artifacts folder
+artifacts_root: artifacts
+
+# Data Ingestion Configuration
+data_ingestion:
+  local_data_path: artifacts/data_ingetsion/mental_health_dataset_test.csv
+  validation_data_path: artifacts/data_ingetsion/mental_health_dataset_test.csv
