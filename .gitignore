@@ -3,3 +3,4 @@ env/
 .env
 artifacts/*
 __pycache__/
+logs/*
