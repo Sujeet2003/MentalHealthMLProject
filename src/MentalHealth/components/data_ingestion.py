@@ -1,5 +1,5 @@
 from src.MentalHealth.entity.config_entity import DataIngestionConfig
-from pathlib import Path
+from src.MentalHealth import logger
 
 
 class DataIngestion:
@@ -7,4 +7,5 @@ class DataIngestion:
         self.config = config
     
     def get_file_path(self):
-        print(self.config.local_data_path, "\n", self.config.validation_data_path)
+        logger.info(f"Datasets file path are as: {self.config.local_data_path} \n{self.config.validation_data_path}")
+        print(f"{self.config.local_data_path} \n {self.config.validation_data_path}")
