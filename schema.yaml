@@ -1,0 +1,15 @@
+COLUMNS:
+  Gender: int64  
+  Age: float64
+  Have you ever had suicidal thoughts ?: int64  
+  Work/Study Hours: float64
+  Financial Stress: float64
+  Family History of Mental Illness: int64  
+  Pressure: float64
+  Satisfaction: float64
+  Sleep Duration Numeric: int64  
+  Dietary Habits Numeric: int64
+
+
+TARGET_COLUMNS:
+  Depression: int64  
