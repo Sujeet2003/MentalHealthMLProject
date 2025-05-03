@@ -3,5 +3,10 @@ artifacts_root: artifacts
 
 # Data Ingestion Configuration
 data_ingestion:
+  local_data_path: artifacts/data_ingetsion/final_data.csv
+
+# Data Validation Configuration
+data_validation:
+  root_dir: artifacts/data_validation
   local_data_path: artifacts/data_ingetsion/mental_health_dataset_test.csv
-  validation_data_path: artifacts/data_ingetsion/mental_health_dataset_test.csv
+  STATUS_FILE: artifacts/data_validation/status.txt

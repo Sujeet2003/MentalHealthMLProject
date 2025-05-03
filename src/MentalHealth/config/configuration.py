@@ -13,6 +13,5 @@ class ConfigurationManager:
         config = self.config.data_ingestion
         data_ingestion_config = DataIngestionConfig(
             local_data_path=config.local_data_path,
-            validation_data_path=config.validation_data_path
         )
         return data_ingestion_config

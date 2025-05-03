@@ -4,4 +4,3 @@ from pathlib import Path
 @dataclass(frozen=True)
 class DataIngestionConfig:
     local_data_path: Path
-    validation_data_path: Path
