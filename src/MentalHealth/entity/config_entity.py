@@ -13,3 +13,9 @@ class DataValidationConfig:
     local_data_path: Path
     schema_columns: dict
     target_columns: dict
+
+# Data Transformation Config
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
