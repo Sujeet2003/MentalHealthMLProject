@@ -1,4 +1,4 @@
-import yaml, os
+import yaml, os, json
 from src.MentalHealth import logger
 from ensure import ensure_annotations
 from box import ConfigBox
@@ -39,3 +39,15 @@ def create_directories(path_to_directory: list, verbose=True):
         os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f"Created directory at: {path}")
+
+@ensure_annotations
+def save_json(path: Path, data: dict):
+    """
+        saves JSON data
+        Args:
+            path: Path to json file
+            data (dict): data which has to be saved into json file
+    """
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4)
+    logger.info(f"json file saved at: {path}")

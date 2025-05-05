@@ -1,5 +1,5 @@
 from src.MentalHealth.constants import *
-from src.MentalHealth.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig
+from src.MentalHealth.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig, ModelEvaluationConfig
 from src.MentalHealth.utils.common import read_yaml
 from src.MentalHealth import logger
 from src.MentalHealth.utils.common import create_directories
@@ -65,7 +65,6 @@ class ConfigurationManager:
         model_trainer_config = ModelTrainerConfig(
             root_dir=config.root_dir,
             train_data_path=config.train_data_path,
-            test_data_path=config.test_data_path,
             model_path=config.model_path,
             learning_rate=params.learning_rate,
             n_estimators=params.n_estimators,
@@ -80,5 +79,20 @@ class ConfigurationManager:
             scale_pos_weight=params.scale_pos_weight,
             seed=params.seed    
         )
-        logger.info(f"All parameters loaded successfully.")
+        logger.info(f"All parameters from Yaml file loaded successfully for Model Training Configurations.")
         return model_trainer_config
+    
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+
+        create_directories([config.root_dir])
+        print(f"{config.root_dir} folder (directory) created successfully")
+
+        model_evalution_config = ModelEvaluationConfig(
+            root_dir=config.root_dir,
+            test_data_path=config.test_data_path,
+            model_path=config.model_path,
+            metrics_file_path=config.metrics_file_path    
+        )
+        logger.info(f"All parameters from Yaml file loaded successfully for Model Evaluation Configurations.")
+        return model_evalution_config
