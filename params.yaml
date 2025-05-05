@@ -1,0 +1,13 @@
+XGBoost:
+  learning_rate: 0.01
+  n_estimators: 1000
+  max_depth: 4
+  min_child_weight: 5
+  gamma: 0
+  subsample: 0.5
+  colsample_bytree: 0.8
+  reg_alpha: 0.005
+  objective: binary:logistic
+  nthread: 4
+  scale_pos_weight: 1
+  seed: 0
