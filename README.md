@@ -96,7 +96,8 @@ To simplify setup and ensure consistency across environments, this project is co
 
 Steps to Run the Project
 - Clone the Repository
-        git clone https://github.com/yourusername/mental_health_prediction.git
+        git clone https://github.com/Sujeet2003/mental_health_prediction.git
+  
         cd mental_health_prediction
 - Build the Docker Image
         docker build -t mental-health-app .
