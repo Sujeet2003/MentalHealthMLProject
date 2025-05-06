@@ -12,42 +12,34 @@ This project leverages data from the Kaggle Tabular Playground Series - November
 
 ### 🔬 Workflow
 1. Data Loading
-Loaded training and test datasets from the artifacts/data_ingestion/ directory.
 
-Inspected dataset shape and types.
+    Loaded training and test datasets from the artifacts/data_ingestion/ directory.
+
+    Inspected dataset shape and types.
 
 2. Exploratory Data Analysis (EDA)
-Visualized depression distribution across:
 
-Gender
+    Visualized depression distribution across: Gender, Age, Sleep duration, Suicidal thoughts history
 
-Age
-
-Sleep duration
-
-Suicidal thoughts history
-
-Plotted a heatmap of correlations between numerical features to understand relationships.
+    Plotted a heatmap of correlations between numerical features to understand relationships.
 
 3. Data Preprocessing
-Handled missing values (if any).
 
-Encoded categorical variables as needed for model input.
+    Handled missing values.
 
-Normalized/standardized numerical features for better model performance.
+    Encoded categorical variables as needed for model input.
+
+    Normalized/standardized numerical features for better model performance.
 
 4. Model Development
-Split data into training and validation sets.
 
-Hyperparameter tuning using GridSearch
+    Split data into training and validation sets.
 
-Trained an XGBoost Classifier, chosen for its efficiency and performance on tabular data.
+    Hyperparameter tuning using GridSearch
 
-Evaluated using:
-    - Accuracy
-    - Precision
-    - Recall
-    - F1 Score
+    Trained an XGBoost Classifier, chosen for its efficiency and performance on tabular data.
+
+    Evaluated using: Accuracy, Precision, Recall, F1 Score
 
 
 ### ✅ Model Performance
