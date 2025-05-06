@@ -6,7 +6,7 @@ from src.MentalHealth import logger
 class Prediction:
     def __init__(self):
         # load model
-        self.model = joblib.load(Path("artifacts/model_trainer/model.joblib"))
+        self.model = joblib.load(Path("model.joblib"))
         logger.info(f"Model loaded for prediction stage.")
     
     def prediction(self, data: list) -> int:
