@@ -32,7 +32,7 @@ decorator==5.2.1
 Deprecated==1.2.18
 docker==7.1.0
 ensure==1.0.4
-executing==0.8.2
+# executing==0.8.2
 fastapi==0.115.12
 Flask==3.1.0
 fonttools==4.57.0
