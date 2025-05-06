@@ -14,6 +14,7 @@ class ModelEvaluationPipeline:
         model_evaluation_config = config.get_model_evaluation_config()
         model_evalaution = ModelEvaluation(model_evaluation_config)
         model_evalaution.evaluate_model()
+        model_evalaution.connect_to_dagshub()
 
 if __name__ == "__main__":
     try:

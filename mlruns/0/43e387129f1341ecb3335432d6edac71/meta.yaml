@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Projects/MentalHealthMLProject/mlruns/0/43e387129f1341ecb3335432d6edac71/artifacts
+end_time: 1746525636508
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 43e387129f1341ecb3335432d6edac71
+run_name: worried-horse-339
+run_uuid: 43e387129f1341ecb3335432d6edac71
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746525630994
+status: 3
+tags: []
+user_id: Sujeet2003
