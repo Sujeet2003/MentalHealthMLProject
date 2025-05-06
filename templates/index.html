@@ -29,6 +29,19 @@
             </p>
         </div>
 
+        <div class="result">
+            {% if result == 1 %}
+            <div class="alert alert-danger" role="alert">
+                Oops, seems like you have <strong>Tension</strong> 😔 <br>
+                It's okay to feel depressed sometimes. You're not alone 💙, Just chill!
+            </div>
+            {% elif result == 0 %}
+            <div class="alert alert-success" role="alert">
+                <strong>No Tension</strong>, Just Chill 😊
+            </div>
+            {% endif %}
+        </div>
+
         <form method="post" class="text-bg-light" autocomplete="off">
 
             <div class="mb-3">
@@ -104,18 +117,6 @@
             </div>
         </form>
 
-        <div class="result">
-            {% if result == 1 %}
-            <div class="alert alert-danger" role="alert">
-                Oops, seems like you have <strong>Tension</strong> 😔 <br>
-                It's okay to feel depressed sometimes. You're not alone 💙, Just chill!
-            </div>
-            {% elif result == 0 %}
-            <div class="alert alert-success" role="alert">
-                <strong>No Tension</strong>, Just Chill 😊
-            </div>
-            {% endif %}
-        </div>
     </div>
     
     <footer>

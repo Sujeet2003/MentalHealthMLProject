@@ -21,7 +21,3 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      # # Trigger Render deploy (optional)
-      # - name: Trigger Render Deploy
-      #   run: |
-      #     curl -X POST https://api.render.com/deploy/srv-xxxxxxxxx?key=YOUR_RENDER_DEPLOY_HOOK
