@@ -17,34 +17,36 @@ This project aims to identify individuals who may be suffering from depression u
 
 MentalHealthMLProject/
 │
-├── src/                            # Core ML modules
-│   ├── data_ingestion/             # Load and split raw data
 
-│   ├── data_validation/            # Schema validation & missing value checks
+├── src/                           
 
-│   ├── data_transformation/        # Encoding, scaling, feature engineering
+│   ├── data_ingestion/            
 
-│   ├── model_trainer/              # Model training using XGBoost
+│   ├── data_validation/           
 
-│   ├── model_evaluation/           # Evaluation metrics & comparison
+│   ├── data_transformation/       
 
-│   └── prediction/                 # Inference pipeline
+│   ├── model_trainer/             
+
+│   ├── model_evaluation/          
+
+│   └── prediction/                
 
 │
 
-├── templates/                      # HTML templates for web app
+├── templates/                     
 
-├── static/                         # CSS and assets
+├── static/                        
 
-├── app.py                          # Flask application
+├── app.py                         
 
-├── Dockerfile                      # Docker container definition
+├── Dockerfile                     
 
-├── MLproject                       # MLflow project entry point
+├── MLproject                      
 
-├── requirements.txt                # Project dependencies
+├── requirements.txt               
 
-└── README.md                       # Project overview
+└── README.md                      
 
 
 
