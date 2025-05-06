@@ -17,9 +17,7 @@ This project aims to identify individuals who may be suffering from depression u
 
 MentalHealthMLProject/
 │
-
 ├── src/                            # Core ML modules
-
 │   ├── data_ingestion/             # Load and split raw data
 
 │   ├── data_validation/            # Schema validation & missing value checks
