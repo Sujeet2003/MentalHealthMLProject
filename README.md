@@ -96,13 +96,13 @@ To simplify setup and ensure consistency across environments, this project is co
 
 Steps to Run the Project
 - Clone the Repository
-        git clone https://github.com/Sujeet2003/mental_health_prediction.git
+        git clone https://github.com/Sujeet2003/MentalHealthMLProject.git
   
         cd mental_health_prediction
 - Build the Docker Image
-        docker build -t mental-health-app .
+        docker build -t MentalHealthMLProject .
 - Run the Docker Container
-        docker run -p 5000:5000 mental-health-app
+        docker run -p 5000:5000 MentalHealthMLProject
 - Access the App
         Open your browser and go to: http://localhost:5000
 
